@@ -5,18 +5,20 @@ using namespace std;
 
 int main(int argc, char**argv) {
   int *a,N;
-  /* Make sure you convert 'a' properly*/ 
+  
+  /* Make sure you convert 'a' properly */ 
   
   //comment 
    display(a,N);
 
   if(argc>1){
        if(argv[1] =="bubble") bubbleSort(a,N); 
-       else /* Complete the rest*/
+       else /* Complete the rest */
          //insertion(a,N);
     
       // selectionSort(a,N);
        display(a,N);
+
       }
  return 0;
 }

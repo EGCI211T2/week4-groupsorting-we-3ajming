@@ -50,7 +50,7 @@ void insertion(int a[],int n){
     for(i = 1; i < N; i++)  
     {
         key = a[i];        
-        j = i - 1;
+        j = i - 1;        
 
         
         while(j >= 0 && a[j] > key)
