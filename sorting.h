@@ -55,7 +55,7 @@ void insertion(int a[],int n){
         
         while(j >= 0 && a[j] > key)
         {
-            a[j + 1] = a[j];
+            swap(a[j], a[j - 1]);
             j--;
         }
         
