@@ -4,10 +4,13 @@ using namespace std;
 #include "sorting.h"
 
 int main(int argc, char**argv) {
-  int *a,N;
+  int *a,N=argc-1,i;
   /* Make sure you convert 'a' properly*/ 
-  
-
+  a=new int[N];
+  for(i=0;i<=N;i++;a++){
+    *a = atoi(argv[i+1]);
+  }
+  a-=N;
    display(a,N);
 
   if(argc>1){
