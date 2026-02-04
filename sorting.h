@@ -20,9 +20,23 @@ void selectionSort(int data[], int length)
 { 
 	int i, j, m, mi; 
 	
+  for(i=0; i<length-1; i++)
+  {
+    mi=i;
+    for(j=i+1; j<length; j++)
+    {
+      if(data[j]<data[mi])
+      {
+        mi=j;
+      }
+    }
+
+    if(mi!=i){
+      swap(data[i], data[mi]);
+    }
+  }
      display(data,length);
      
-	
 } 
 
 
