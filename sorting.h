@@ -2,6 +2,7 @@
 #define SORTING_H
 
 #include <iomanip>
+
 /* function prototype*/
 
 
@@ -42,8 +43,24 @@ void selectionSort(int data[], int length)
 
 
 void insertion(int a[],int n){
+  int i,j,key;
 
+   int i, j, key;
 
+    for(i = 1; i < N; i++)  
+    {
+        key = a[i];        
+        j = i - 1;
+
+        
+        while(j >= 0 && a[j] > key)
+        {
+            a[j + 1] = a[j];
+            j--;
+        }
+        
+        a[j + 1] = key;
+    }
 }
 
 void swap(int &a,int &b){
