@@ -54,15 +54,13 @@ void insertion(int a[],int n){
         
         while(j >= 0 && a[j] > key)
         {
-          cout << "Shift: "; 
              a[j + 1] = a[j];
             j--;
         }
         
-        a[j + 1] = key;
-        cout << "Insert: "; 
+        a[j + 1] = key; 
         display(a,n);
-    }display(a, n);
+    }
 }
 
 void swap(int &a,int &b){
@@ -87,6 +85,6 @@ void bubbleSort(int a[],int n){
   }
 }
 
-
+//
 
 
