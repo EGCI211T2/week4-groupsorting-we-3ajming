@@ -1,8 +1,8 @@
-#ifndefine SORTING_H
+
 #define SORTING_H
-
+#include <iostream>
 #include <iomanip>
-
+using namespace std;
 /* function prototype*/
 
 
@@ -43,11 +43,10 @@ void selectionSort(int data[], int length)
 
 
 void insertion(int a[],int n){
-  int i,j,key;
 
    int i, j, key;
 
-    for(i = 1; i < N; i++)  
+    for(i = 1; i < n; i++)  
     {
         key = a[i];        
         j = i - 1;        
@@ -55,7 +54,7 @@ void insertion(int a[],int n){
         
         while(j >= 0 && a[j] > key)
         {
-            swap(a[j], a[j - 1]);
+             a[j + 1] = a[j];
             j--;
         }
         
@@ -84,7 +83,6 @@ void bubbleSort(int a[],int n){
     display(a,n);
   }
 }
-#endif
 
 
 
